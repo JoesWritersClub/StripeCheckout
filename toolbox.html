@@ -2,5 +2,12 @@
   <head>
   </head>
   <body>
+    <div id="location"></div>
+    <script type=text/javascript>
+    var url = (window.location != window.parent.location)
+            ? document.referrer
+            : document.location.href;
+     document.getElementById("location").innerHTML = url;
+    </script>
   </body>
 </html>
